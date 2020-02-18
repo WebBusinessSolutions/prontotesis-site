@@ -140,7 +140,6 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
 }
 
 address {
@@ -315,11 +314,15 @@ a:focus,
 /* HEADER */
 /*--------------------*/
 
-#mu-hero {
-	background-color: #0091ea;
+.mu-hero {
+	background-color: #0092ec;
 	display: inline;
-	float: left;
+}
+
+.navbar-fixed-top{
+	position: fixed;
 	width: 100%;
+	z-index: 1;
 }
 
 .mu-logo-area {
@@ -372,7 +375,7 @@ a:focus,
 /*--------------------*/
 
 .mu-navbar {
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .mu-navbar-nav {
@@ -519,7 +522,7 @@ a:focus,
 /*--------------------*/
 
 
-#mu-about {
+.mu-about {
 	background-color: #fff;
 	display: inline;
 	float: left;
@@ -529,7 +532,7 @@ a:focus,
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 150px 0 50px 0;
 	width: 100%;
 }
 
@@ -556,15 +559,16 @@ a:focus,
 .mu-about-left {
 	display: inline;
 	float: left;
-	padding-right: 15px;
 	width: 100%;
+	text-align: center;
 }
 
 .mu-about-right {
 	display: inline;
 	float: left;
-	padding-left: 15px;
-	width: 100%
+	width: 98%;
+	margin-top: 30px;
+	text-align: justify;
 }
 
 .mu-about-right ul {}
@@ -650,7 +654,7 @@ a:focus,
 /* SERVICE */
 /*--------------------*/
 
-#mu-service {
+.mu-service {
 	display: inline;
 	float: left;
 	width: 100%;
@@ -673,22 +677,36 @@ a:focus,
 	display: inline;
 	float: left;
 	width: 100%;
-	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
+
+.bg-content:hover {
+background-color: #3596f1;
+border-radius: 5%;
+}
+
+.mu-single-service-content h3 a{
+	color: #050505;
+}
+
+.mu-single-service-content h3 a:hover{
+	color: #ffffff;
+}
+
 
 .mu-single-service-icon {
 	background-color: #0091ea;
 	border-radius: 50%;
+	justify-content: center;
 	color: #fff;
 	display: inline;
 	font-size: 18px;
 	float: left;
-	height: 48px;
-	width: 48px;
+	height: 50px;
+	width: 50px;
 	text-align: center;
 	line-height: 48px;
-	margin-right: 20px;
 }
 
 .mu-single-service-icon .fa {
@@ -698,7 +716,8 @@ a:focus,
 .mu-single-service-content {
 	display: inline;
 	float: left;
-	width: 80%;
+	margin-top: 15px;
+	margin-left: 5px;
 }
 
 .mu-single-service-content h3 {
@@ -1177,7 +1196,7 @@ a:focus,
 	padding: 50px 0 40px;
 }
 
-.mu-standard-pricing .mu-single-pricebox {;
+.mu-standard-pricing .mu-single-pricebox {
 	padding: 5px 0 40px;
 }
 
@@ -1487,6 +1506,15 @@ a:focus,
 	width: 100%;
 }
 
+.mu-single-footer-social {
+	text-align: center;
+	display: inline;
+	float: left;
+	color: #fff;
+	font-size: 14px;
+	width: 100%;
+}
+
 .mu-footer-logo {
 	margin-bottom: 25px;
 }
@@ -1583,16 +1611,12 @@ a:focus,
 	background-color: #1da1f2;
 }
 
-.mu-social-media a.mu-google-plus {
-	background-color: #dd4b39;
+.mu-social-media a.mu-instagram {
+	background-color: #ff4363;
 }
 
-.mu-social-media a.mu-pinterest {
-	background-color: #bd081c;
-}
-
-.mu-social-media a.mu-youtube {
-	background-color: #cd201f;
+.mu-social-media a.mu-whatsapp {
+	background-color: #4ff887c2;
 }
 
 .mu-social-media a:hover,
@@ -1865,7 +1889,7 @@ a:focus,
 /* BLOG PAGE */
 /*--------------------*/
 
-#mu-from-blog {
+.mu-from-blog {
 	background-color: #fff;
 	float: left;
 	padding: 100px 0;
@@ -2856,7 +2880,6 @@ a:focus,
 	}
 
 	.mu-single-service-content {
-		width: 78%;
 		margin-left: 15px;
 	}
 
@@ -3702,3 +3725,7 @@ a:focus,
 	
 }
 
+.justify-content-center{
+	display: flex;
+	justify-content: center;
+}
